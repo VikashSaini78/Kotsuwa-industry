@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 231, 233);
+}
+.cost_header-img{
+    width: 100%;
+    height: 60vh;
+    
+}
+.cost_header-img img{
+    width: 100%;
+    height: 55vh;
+    overflow: hidden;
+}
+.Customise_linkn{
+    display: flex;
+    z-index: 99;
+    position: relative;
+    align-items: center;
+    bottom: 50%;
+    gap: 10px;
+}
+.Customise_linkn link{
+    text-decoration: none;
+    color: black;
+}
+.Customise_linkn p{
+    color: rgb(39, 122, 133);
+}
+
+.cost_contant{
+    width: 100%;
+    height: 40px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cost_contant h5{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.customise_container{
+    width: 88%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.customise_container-sm{
+    padding: 50px;
+}
+.customise_container-sm input:focus{
+box-shadow: none;
+}
+.customise_container-sm label{
+  font-size: 14px;
+  margin-top: 15px;
+}
+.customise_container-sm input{
+    font-size: 13px;
+    padding: 12px;
+    border-radius: 1px;
+    }
+
+    
+    .customise_container-sm select{
+        font-size: 13px;
+        padding: 12px;
+        border-radius: 1px;
+        
+    }
+    .customise_container-sm select:focus{
+        box-shadow: none;   
+    }
+    .customise_container-sm option{
+        font-size: 13px;
+ 
+        
+    }
+    .customise_container-sm textarea{
+        font-size: 13px;
+        border-radius: 1px;
+        /* margin-bottom: 40px; */
+    }
+    .customise_container-sm textarea:focus{
+    box-shadow: none;
+        
+    }
+
+    .contant-buton{
+        width: 100%;
+        height: 70px;
+        /* background-color: #89a78934; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contant-buton button{
+        width: 150px;
+      font-size: 13px;
+      background-color: rgb(7, 87, 80);
+      color: white;
+    }
+    .contant-buton button:hover{
+      background-color:   rgb(51, 51, 51);
+      color: white;
+    }
+    
+    .contant-buton button:focus{
+         box-shadow: none;
+    }
+  
