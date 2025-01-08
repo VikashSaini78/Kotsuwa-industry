@@ -207,9 +207,13 @@
 .About_Company-container{
   width: 100%;
   height: auto;
-  /* background: url("./media/bgimg.jpg") no-repeat center center fixed; */
  background-color: rgb(119, 119, 119);
  margin-top: 30px;
+ background-image: url('../media/header.jpg'); /* Replace with your image path */
+ background-size: cover; /* Ensures the image covers the entire area */
+ background-repeat: no-repeat; /* Prevents tiling of the image */
+ background-attachment: fixed; /* Keeps the image fixed during scrolling */
+ background-position: center center; /* Centers the image */
 
 }
 
@@ -224,7 +228,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(39, 39, 39);
   /* background-color: rgb(75, 80, 150); */
 }
 
@@ -234,7 +238,7 @@
   margin: auto;
   height: 20vh;
 text-align: center;
-color: white;
+color: rgb(56, 56, 56);
  /* background-color: rgb(75, 80, 150); */
 }
 
@@ -315,7 +319,7 @@ color: rgb(29, 29, 29);
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: rgb(100, 100, 100);
+/* background-color: rgb(100, 100, 100); */
   }
 
   .Looking_form-div{

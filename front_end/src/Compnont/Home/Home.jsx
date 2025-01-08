@@ -291,10 +291,17 @@ function Home() {
      <div className="row">
      <div className="col-md-6">
      <div className="youtube_video">
-     <div class="ratio ratio-16x9">
-      <iframe src="https://youtu.be/OalU-s7Pyok?si=ZEVY5FZJFIM-EzyT" title="YouTube video" allowfullscreen></iframe>
-      
-      </div>
+     <div className='invoice_Details-container'>
+     <div className="ratio ratio-16x9">
+     <iframe
+        src="https://www.youtube.com/embed/OalU-s7Pyok?rel=0"
+        title="YouTube video"
+        allowfullscreen
+    ></iframe>
+</div>
+
+        </div>
+
      </div>
 
      </div>

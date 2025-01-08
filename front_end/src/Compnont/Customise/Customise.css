@@ -114,3 +114,28 @@ box-shadow: none;
          box-shadow: none;
     }
   
+    @media (max-width: 768px){
+        .cost_contant{
+            width: 87%;
+            height: auto;
+            margin: auto;
+            text-align: center;
+        }
+        .cost_header-img img{
+            height: 150px;
+        }
+        .cost_header-img{
+            height: 170px;
+        }
+        .Customise_linkn{
+            display: flex;
+            z-index: 99;
+            position: relative;
+            align-items: center;
+            bottom: 50%;
+            gap: 10px;
+        }
+        .customise_container-sm{
+            padding: 20px;
+        }
+    }
