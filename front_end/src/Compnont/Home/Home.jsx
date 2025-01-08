@@ -102,27 +102,50 @@ function Home() {
 
       {/* colom  */}
 
+      <h2 className="Portfolio">Portfolio</h2>
+
       <div className="card-container">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-4">
-              <div className="card_image-div">
-                <img src="./media/card1.jpg" alt="" />
+
+      <div className="card_sm-container">
+      <div className="card_image-div">
+                <img src="./media/cotton1.jpg" alt="" />
               </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card_image-div">
-                <img src="./media/card2.jpg" alt="" />
+
+          <div className="card_image-div">
+                <img src="./media/cotton9.jpg" alt="" />
               </div>
-            </div>
-            <div className="col-md-4">
+
               <div className="card_image-div">
-                <img src="./media/card3.jpg" alt="" />
+                <img src="./media/cotton12.jpg" alt="" />
               </div>
-            </div>
-          </div>
-        </div>
+
       </div>
+
+       
+{/* 2 */}
+      <div className="card_sm-container_2">
+      <div className="card_image-div">
+                <img src="./media/cotton4.webp" alt="" />
+              </div>
+
+          <div className="card_image-div">
+                <img src="./media/cotton4.jpg" alt="" />
+              </div>
+
+              <div className="card_image-div">
+                <img src="./media/cotton10.jpg" alt="" />
+              </div>
+
+      </div>
+              
+            </div>
+             
+          
+          <div className="banner_container">
+          <img src="./media/banner.png"/>
+
+          </div>
+
 
       <div className="Our_Products">
         <h3>Our Products</h3>
@@ -164,10 +187,10 @@ function Home() {
       <div className="col-md-6">
       <div className="Impex_Forbes-div">
     <div className="md_container">
-    <h2>Sekawati Impex at Forbes India</h2>
+    {/* <h2>Sekawati Impex at Forbes India</h2> */}
      <div className="gupata_container">
      
-     <Link to={"/"}><img src="./media/gupta-img.jpg" alt=""/></Link>
+     <Link to={"/"}><img src="./media/cotton15.jpg" alt=""/></Link>
      </div>
     </div>
 </div>
@@ -215,6 +238,8 @@ function Home() {
       {/* About Company */}
        
        <div className="About_Company-container">
+       <div className="About_Company-container_sm">
+
         <h3 className="about">About Company</h3>
        
         <p>Sekawati is An ISO 9001:2015 & Sedex certified social complied company since last 25 years and we cater to the global marketplace. We are one of the largest producers of eco-friendly bags made of cotton and canvas.</p>
@@ -324,9 +349,15 @@ function Home() {
      </div>
 
      </div>
+</div>
+
        </div>
  
 
+   
+   
+   
+   
    
     </>
   );

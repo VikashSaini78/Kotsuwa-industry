@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom'
 function About() {
   return (
     <>
-    <div className='about_container'>
     <div className='home_abut-page'>
     <p><Link to={"/"}>Home</Link> / </p><p>About Us</p>
     </div>
+    <div className='about_container'>
+    
     <div className='about_contant'>
         <h1>About Us</h1>
         <p>Sekawati Impex, A highly acclaimed name - Sekawati, specializes in the manufacturing and export of a wide variety of Canva
