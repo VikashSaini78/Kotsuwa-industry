@@ -15,6 +15,7 @@
   .carousel-item img{
     width: 100%;
     height: 80vh;
+    object-fit: cover;
   
 
   }
@@ -250,7 +251,7 @@
   margin: auto;
  background-color: rgb(119, 119, 119);
  margin-top: 30px;
- background-image: url('../media/header.jpg'); /* Replace with your image path */
+ background-image: url('../media/des4.webp'); /* Replace with your image path */
  background-size: cover; /* Ensures the image covers the entire area */
  background-repeat: no-repeat; /* Prevents tiling of the image */
  background-attachment: fixed; /* Keeps the image fixed during scrolling */
@@ -537,3 +538,15 @@ align-items: center;
  
 }
 
+
+.cardsss{
+  width: 100%;
+  /* background-color: #2d722f; */
+  overflow: hidden;
+}
+
+.contactss{
+  width: 100%;
+background-color: yellowgreen;
+overflow: hidden;
+}
