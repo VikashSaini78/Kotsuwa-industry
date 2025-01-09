@@ -98,21 +98,22 @@ border-radius: 50%;
 @media (max-width: 768px) {
     .footer_icons-div{
         display: inline;
-        /* background-color: aliceblue; */
-        /* justify-content: start; */
     
+    }
+    .socal_media-icons {
+        gap: 7px;
+        display: flex;
+        justify-content: center;
     }
     .footer_icons-div p{
         padding-top: 15px;
-        /* margin-top: 5px; */
-        /* background-color: aliceblue; */
-        margin: 0;
     }
     .footer_logo p{
-    /* background-color: aliceblue; */
     text-align: center;
     padding: 5px;
     font-size: 15px;
-    /* background-color: aliceblue; */
+    }
+    .footer_icons-div{
+        text-align: center;
     }
 }

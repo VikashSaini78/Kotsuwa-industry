@@ -10,7 +10,7 @@ function Home() {
     infinite: true,
     centerPadding: "60px",
     swipeToSlide: true,
-    slidesToShow: 5, // Default for desktop
+    slidesToShow: 4, // Default for desktop
     responsive: [
       {
         breakpoint: 1024, // Tablet and below
@@ -48,7 +48,7 @@ function Home() {
       <img src="./media/colom13.webp" class="d-block w-100" alt="img error"/>
     </div>
     <div class="carousel-item">
-      <img src="./media/des9.webp" class="d-block w-100" alt="img error"/>
+      <img src="./media/des10.jpg" class="d-block w-100" alt="img error"/>
     </div>
     <div class="carousel-item">
       <img src="./media/des11.jpeg" class="d-block w-100" alt="img error"/>
@@ -58,6 +58,69 @@ function Home() {
       </div>
 
       {/* colom  */}
+
+
+
+
+
+      <div className="business_container">
+          
+       <div className="Business-Manufacturer">
+          <img src="./media/about-icon-1.png"/>
+          <p>Nature of Business-Manufacturer</p>
+          
+          </div>
+  
+          <div className="Business-Manufacturer">
+          <img src="./media/about-icon-2.png"/>
+          <p>Total Number of Employees- 101 to 500r</p>
+          
+          </div>
+
+          <div className="Business-Manufacturer">
+          <img src="./media/about-icon-3.png"/>
+          <p>Year of Establishment- 1991</p>
+          
+          </div>
+          </div>
+
+     
+
+      <div className="business_container2">
+      <div className="Business-Manufacturer_2">
+          <img src="./media/about-icon-4.png"/>
+          <p>Legal Status Firm- Proprietorship</p>
+          
+          </div> 
+
+          {/* <div className="Business-Manufacturer_2">
+          <img src="./media/about-icon-6.png"/>
+          <p>GST No. 08ADSPG8203G1ZG</p>
+          
+          </div> */}
+
+          {/* <div className="Business-Manufacturer_2">
+          <img src="./media/about-icon-6.png"/>
+          <p>GST No. 08ADSPG8203G1ZG</p>
+          
+          </div> */}
+
+
+      </div>
+
+
+
+        
+       
+      {/* </div> */}
+
+      
+      
+      
+      
+      
+      
+      
 
       <h2 className="Portfolio">Portfolio</h2>
 
@@ -113,24 +176,24 @@ function Home() {
       <div className="slider-container">
         <Slider {...settings}>
           <div className="slider_cardimg-div">
-            <img src="./media/coton2.png" alt="Cotton Bag 1" />
-            <div><button>Cotton Bags</button></div>
+            <img src="./media/colom1.jpg" alt="Cotton Bag 1" />
+            {/* <div><button>Cotton Bags</button></div> */}
           </div>
           <div className="slider_cardimg-div">
-            <img src="./media/coton3.jpg" alt="Cotton Bag 2" />
-            <div><button>Cotton Bags</button></div>
+            <img src="./media/colom2.jpg" alt="Cotton Bag 2" />
+            {/* <div><button>Cotton Bags</button></div> */}
           </div>
           <div className="slider_cardimg-div">
-            <img src="./media/cotton4.webp" alt="Cotton Bag 3" />
-            <div><button>Cotton Bags</button></div>
+            <img src="./media/colom3.jpg" alt="Cotton Bag 3" />
+            {/* <div><button>Cotton Bags</button></div> */}
           </div>
           <div className="slider_cardimg-div">
-            <img src="./media/coton1.png" alt="Cotton Bag 4" />
-            <div><button>Cotton Bags</button></div>
+            <img src="./media/colom4.jpg" alt="Cotton Bag 4" />
+            {/* <div><button>Cotton Bags</button></div> */}
           </div>
           <div className="slider_cardimg-div">
-            <img src="./media/coton2.png" alt="Cotton Bag 5" />
-            <div><button>Cotton Bags</button></div>
+            <img src="./media/colom6.jpg" alt="Cotton Bag 5" />
+            {/* <div><button>Cotton Bags</button></div> */}
           </div>
         </Slider>
       </div>
@@ -147,7 +210,7 @@ function Home() {
     {/* <h2>Sekawati Impex at Forbes India</h2> */}
      <div className="gupata_container">
      
-     <Link to={"/"}><img src="./media/cotton15.jpg" alt=""/></Link>
+     <Link to={"/"}><img src="./media/colom4.jpg" alt=""/></Link>
      </div>
     </div>
 </div>
@@ -197,12 +260,12 @@ function Home() {
        <div className="About_Company-container">
        <div className="About_Company-container_sm">
 
-        <h3 className="about">About Company</h3>
+        {/* <h3 className="about">About Company</h3>
        
         <p>Sekawati is An ISO 9001:2015 & Sedex certified social complied company since last 25 years and we cater to the global marketplace. We are one of the largest producers of eco-friendly bags made of cotton and canvas.</p>
+        */}
        
-       
-        <div className="container-xl">
+        {/* <div className="container-xl">
       <div className="row">
         <div className="col-md-4">
           <div className="Business-Manufacturer">
@@ -255,7 +318,7 @@ function Home() {
       </div>
 
       </div>
-      </div>
+      </div> */}
        
             
       <div className="white_div">
