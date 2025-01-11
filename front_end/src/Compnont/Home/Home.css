@@ -90,6 +90,7 @@
     display: flex;
 }
 
+
 .card_image-div {
     position: relative;
     width: 33%;
@@ -194,6 +195,7 @@
     background-color:  rgb(41, 107, 71);
     
 } */
+
 .slick-prev:before {
     font-size: 33px;
     line-height: 1;
@@ -238,10 +240,11 @@
 }
 
 .gupata_container{
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: auto;
-  background-color: rgb(40, 78, 109);
+  object-fit: cover;
+  /* background-color: rgb(40, 78, 109); */
   /* margin-left: 14px; */
 
 }
@@ -249,7 +252,8 @@
   width: 100%;
   margin: auto;
   object-fit: cover;
-  height: 323px;
+  height: 340px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
@@ -262,6 +266,15 @@
   justify-content: center;
   align-items: center;
 
+}
+
+
+.Bang_container-div{
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  /* background-color: antiquewhite; */
 }
 
 
@@ -544,6 +557,27 @@ align-items: center;
   align-items: start;
   margin-top: 10px;
 }
- 
+.Bang_container-div{
+  width: 90%;
+  margin: auto;
+   display: inline;
+  /* background-color: rgb(151, 114, 66); */
+}
+
+.gupata_container{
+  width: 100%;
+  text-align: center;
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   /* background-color: #222222; */
+}
+.gupata_container img{
+  width: 90%;
+  /* margin: auto; */
+  object-fit: cover;
+  /* height: 340px; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 }
 

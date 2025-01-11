@@ -13,7 +13,7 @@ function Footer() {
       <div className='row'>
       <div className='col-md-3'>
          <div className='footer_logo'>
-         <img src='./media/sekawati-logo.jpg' alt=''/>
+         <img src='./media/Kotsuwa.jpg' alt=''/>
          <p>Manufacturer and exporter of all kinds of cotton and canvas hand bags.</p>
          </div>
       </div>

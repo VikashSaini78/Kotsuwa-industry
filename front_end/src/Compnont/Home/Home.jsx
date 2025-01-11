@@ -210,12 +210,15 @@ function Home() {
     {/* <h2>Sekawati Impex at Forbes India</h2> */}
      <div className="gupata_container">
      
-     <Link to={"/"}><img src="./media/colom4.jpg" alt=""/></Link>
+     <Link to={"/"}><img src="./media/colom14.png" alt=""/></Link>
      </div>
     </div>
 </div>
 
         </div>
+
+
+
         <div className="col-md-6">
         <div className="Testimonial_div">
           <h2>Testimonial</h2>
@@ -253,7 +256,71 @@ function Home() {
         </div>
 
         </div>
+
       </div>
+
+
+        {/* 2colom */}
+
+         <div className="Bang_container-div">
+
+      
+ 
+         <div className="col-md-6">
+        <div className="Testimonial_div">
+          <h2>Testimonial</h2>
+          <div className="text_slider">
+           
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p>"Congratulations!!! This is awesome!!! You truly are the Indian BAGMAN! I always liked that Sekawati focused on particular product. Not many business owners can do that. </p>
+
+      <p> People tend to expand their business in wrong way (in my opinion). And I appreciate your flexibility that you accepted my request for sourcing organic cotton for my bags, even the order was so small back then!"</p>
+
+      <h5>ASAKO MARUNO</h5>
+      <h6>GREEN TEE , JAPAN</h6>
+    </div>
+    <div class="carousel-item">
+    <p>"Congratulations!!! This is awesome!!! You truly are the Indian BAGMAN! I always liked that Sekawati focused on particular product. Not many business owners can do that. </p>
+
+<p> People tend to expand their business in wrong way (in my opinion). And I appreciate your flexibility that you accepted my request for sourcing organic cotton for my bags, even the order was so small back then!"</p>
+
+<h5>ASAKO MARUNO</h5>
+<h6>Vikash  , JAPAN</h6>
+    </div>
+    <div class="carousel-item">
+    <p>"Congratulations!!! This is awesome!!! You truly are the Indian BAGMAN! I always liked that Sekawati focused on particular product. Not many business owners can do that. </p>
+
+<p> People tend to expand their business in wrong way (in my opinion). And I appreciate your flexibility that you accepted my request for sourcing organic cotton for my bags, even the order was so small back then!"</p>
+
+<h5>ASAKO MARUNO</h5>
+<h6>Rakesh , JAPAN</h6>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+
+        </div>
+
+
+        <div className="col-md-6">
+      <div className="Impex_Forbes-div">
+    <div className="md_container">
+    {/* <h2>Sekawati Impex at Forbes India</h2> */}
+     <div className="gupata_container">
+     
+     <Link to={"/"}><img src="./media/colom8.avif" alt=""/></Link>
+     </div>
+    </div>
+</div>
+
+        </div>
+      
+        </div>
+       
+     
      
       {/* About Company */}
        

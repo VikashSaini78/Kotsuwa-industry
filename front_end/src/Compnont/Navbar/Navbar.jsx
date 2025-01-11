@@ -51,7 +51,7 @@ function Navbar() {
 
       <div className="navbar_container">
       <div className="nav_logo">
-        <img src="./media/sekawati-logo.jpg" alt="sekhawati logo" />
+        <img src="./media/Kotsuwa.jpg" alt=" logo" />
       </div>
       <div className="menu_toggle" onClick={toggleMenu}>
         <FaBars />
