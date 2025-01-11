@@ -45,7 +45,7 @@ function Home() {
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="./media/colom13.webp" class="d-block w-100" alt="img error"/>
+      <img src="./media/picsart_slider.jpg" class="d-block w-100" alt="img error"/>
     </div>
     <div class="carousel-item">
       <img src="./media/des10.jpg" class="d-block w-100" alt="img error"/>

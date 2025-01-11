@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+
 }
 
 code {
@@ -130,7 +130,7 @@ cursor: pointer;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   position: relative;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
 }
 
 .nav_logo img {

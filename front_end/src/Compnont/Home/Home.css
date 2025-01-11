@@ -520,11 +520,15 @@ align-items: center;
     
 .Testimonial_container{
   width: 100%;
-  height: auto;
+ height: auto;
   /* background-color: yellowgreen; */
-  display: inline;
-
+  /* display:inline; */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center; /* Center-align the content */
+  text-align: center; 
 }
+
 .Business-Manufacturer{
   width: 90%;
   margin: auto;
