@@ -34,7 +34,7 @@ footer{
     margin-bottom: 30px;
 }
 .Catalog_div h6{
-color: rgb(212, 22, 60);
+color: rgb(233, 98, 35);
 }
 
 .Catalog_div p{
@@ -44,7 +44,7 @@ color: rgb(212, 22, 60);
     margin: 0;
 }
 .Catalog_div p:hover{
-    color: rgb(161, 29, 29);
+    color: rgb(233, 98, 35);
     padding: 4px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;

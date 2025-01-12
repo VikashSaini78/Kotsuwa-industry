@@ -491,8 +491,14 @@ align-items: center;
     .slick-prev::before,
     .slick-next::before {
       font-size: 33px;
-      color: #222222;
-      opacity: 1;
+      color: #ffffff;
+  
+    }
+    .slick-prev::before {
+      font-size: 33px;
+      margin-left: 7px;
+      color: #ffffff;
+  
     }
     
     .slick-prev {
@@ -518,17 +524,20 @@ align-items: center;
        
     }
     
+    
 .Testimonial_container{
   width: 100%;
  height: auto;
   /* background-color: yellowgreen; */
-  /* display:inline; */
+  margin-top: 5px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center; /* Center-align the content */
   text-align: center; 
 }
-
+.Testimonial_container h2{
+  height: 11vh;
+}
 .Business-Manufacturer{
   width: 90%;
   margin: auto;
@@ -539,6 +548,10 @@ align-items: center;
   margin-top: 10px;
 
 
+}
+.text_slider{
+  /* background-color: #222222; */
+  margin-bottom: 15px;
 }
 .Business-Manufacturer p{
   margin: 0;
@@ -565,7 +578,7 @@ align-items: center;
   width: 90%;
   margin: auto;
    display: inline;
-  /* background-color: rgb(151, 114, 66); */
+  background-color: rgb(151, 114, 66);
 }
 
 .gupata_container{

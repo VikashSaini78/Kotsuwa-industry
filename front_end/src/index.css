@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+
+  font-family: "Comfortaa", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+
 
 }
 
@@ -254,7 +263,7 @@ input:focus {
 
 
 .about_container{
-  width: 90%;
+  width: 98%;
   margin: auto;
   height: auto;
   margin-bottom: 20px;
@@ -281,9 +290,7 @@ padding: 10px;
   font-style: normal;
 
 }
-.about_contant h1{
-  font-size: 25px;
-  font-weight: 500;
+.about_contant h6{
   color: rgb(13, 102, 102);
   padding: 15px;
 }
