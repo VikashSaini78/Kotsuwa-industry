@@ -181,20 +181,7 @@
     align-items: center;
    
 }
-/* .slider_cardimg-div button{
-    width: 85%;
-    height: 40px;
-    border: none;
-    outline: none;
-    border-radius: 1px;
-    color: white;
-   position: relative;
-   bottom: 1px;
-   font-size: 14px;
-   font-weight: 400;
-    background-color:  rgb(41, 107, 71);
-    
-} */
+
 
 .slick-prev:before {
     font-size: 33px;
@@ -306,7 +293,7 @@
   margin: auto;
  background-color: rgb(119, 119, 119);
  margin-top: 30px;
- background-image: url('../media/des4.webp'); /* Replace with your image path */
+ /* background-image: url('./Compnont/media/des4.webp');  */
  background-size: cover; /* Ensures the image covers the entire area */
  background-repeat: no-repeat; /* Prevents tiling of the image */
  background-attachment: fixed; /* Keeps the image fixed during scrolling */

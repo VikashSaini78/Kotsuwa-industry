@@ -1,8 +1,4 @@
-import "./Navbar.css"
-import { MdOutlineEmail } from "react-icons/md";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { IoLocationOutline } from "react-icons/io5";
-import { FaRegCircleCheck } from "react-icons/fa6";
+// import "../Compnont/"
 import { Link } from "react-router-dom";
 // import { IoIosSearch } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
@@ -73,11 +69,7 @@ function Navbar() {
           </li>
         </div>
         <div className="input_search">
-          {/* <input
-            type="search"
-            className="form-control"
-            placeholder="Search"
-          /> */}
+  
           <form className="form" onSubmit={hendalvalue}>
     <button>
       <svg
