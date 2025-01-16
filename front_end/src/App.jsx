@@ -4,6 +4,7 @@ import Home from "./Compnont/Home";
 import About from "./About";
 import Customise from "./Compnont/Customise";
 import Footer from "./Compnont/Footer";
+// import Contact from "./Compnont/Contact";
 
 function App() {
   return ( 

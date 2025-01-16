@@ -120,7 +120,13 @@ box-shadow: none;
             height: auto;
             margin: auto;
             text-align: center;
+          
         }
+        .cost_contant h5 {
+            font-size: 21px;
+            font-weight: 200;
+        }
+        
         .cost_header-img img{
             height: 150px;
         }

@@ -1,6 +1,6 @@
 // import "../Compnont/"
 import { Link } from "react-router-dom";
-// import { IoIosSearch } from "react-icons/io";
+import { IoSearchOutline } from "react-icons/io5";
 import { FaBars } from "react-icons/fa6";
 
 import { useState } from "react";
@@ -12,10 +12,7 @@ function Navbar() {
      setIsMenuOpen(!isMenuOpen);
    };
    
-  function hendalvalue(e){
-    e.preventDefault()
-   }
- 
+
  
     return ( 
         <>
@@ -70,7 +67,7 @@ function Navbar() {
         </div>
         <div className="input_search">
   
-          <form className="form" onSubmit={hendalvalue}>
+          {/* <form className="form" onSubmit={hendalvalue}>
     <button>
       <svg
         width={17}
@@ -95,7 +92,14 @@ function Navbar() {
       required=""
       type="text"
     />
-  </form>
+  </form> */}
+
+           <div className="search_container-nav">
+           <i><IoSearchOutline /></i>
+           <input type="search"/>
+           </div>
+
+       
         </div>
       </div>
     </div>
