@@ -4,6 +4,7 @@ import { CiFacebook } from "react-icons/ci";
 import { FaGoogle } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <>
@@ -36,16 +37,16 @@ function Footer() {
      <p>Corporate Video</p>
      <p>Corporate Brochure</p>
      <p>Sitemap</p>
-     <p>Contact Us</p>
    
       </div>
       </div>
       <div className='col-md-3'>
       <div className='Catalog_div'>
       <h6> CONTACT INFO</h6>
-     <p>Dinesh Gupta (President)</p>
-     <p>G-82, Garment Zone,Sitapura Industrial Area, Tonk Road Jaipur - 302022, Rajasthan, India</p>
-     <p>9829010564</p>
+     <p>Irfan Ali Ansari (President)</p>
+     <p>🏭 Add-117B, Ram Nagar, Toll Tax, Tehsil Sanganer, Jaipur, Raj. ,302022</p>
+     <p>Contact No. - 70-234-70-489</p>
+     <p><Link>kotsuwaindustry@gmail.com</Link> </p>
 
       </div>
       </div>

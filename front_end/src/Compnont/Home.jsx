@@ -45,12 +45,16 @@ function Home() {
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="./media/des4.webp" className="d-block w-100" alt="img error"/>
+      
+      
     </div>
     <div className="carousel-item">
       <img src="./media/des10.jpg" className="d-block w-100" alt="img error"/>
     </div>
     <div className="carousel-item">
-      <img src="./media/des11.jpeg" className="d-block w-100" alt="img error"/>
+      {/* <img src="./media/des11.jpeg" className="d-block w-100" alt="img error"/> */}
+      <img src="./media/picsart_23.jpg" className="d-block w-100" alt="img error"/>
+      
     </div>
   </div>
 </div>

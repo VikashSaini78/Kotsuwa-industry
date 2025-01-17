@@ -6,7 +6,7 @@ function Customise() {
     <>
       <div className='cost_header-img'>
         <img src='./media/header.jpg'alt=''/>
-        <p className='Customise_linkn'><Link to={"/"}>Home </Link> / Customise</p>
+        {/* <p className='Customise_linkn'><Link to={"/"}>Home </Link> / Customise</p> */}
       </div>
 
          <div className='cost_contant'>
