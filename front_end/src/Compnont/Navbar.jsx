@@ -11,9 +11,11 @@ function Navbar() {
    const toggleMenu = () => {
      setIsMenuOpen(!isMenuOpen);
    };
-   
 
- 
+   const closeMenu = () => {
+     setIsMenuOpen(false);
+   };
+
     return ( 
         <>
            {/* <div className="full_navcntainer">
@@ -51,46 +53,24 @@ function Navbar() {
       </div>
       <div className={`contents ${isMenuOpen ? "open" : ""}`}>
         <div className="li_contents">
-         <li className="home" > <Link to="/">Home</Link></li>
-          <li>
-            <Link to="/about">About us</Link>
-          </li>
-          <li>
-            <Link to="/catlog">Catalog</Link>
-          </li>
-          <li>
-            <Link to="/customise">Customise</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact Us</Link>
-          </li>
+          <li className="home" onClick={closeMenu}> <Link to="/">Home</Link></li>
+          <li onClick={closeMenu}><Link to="/about">About us</Link></li>
+          <li onClick={closeMenu}><Link to="/catlog">Catalog</Link></li>
+          <li onClick={closeMenu}><Link to="/customise">Customise</Link></li>
+          <li onClick={closeMenu}><Link to="/contact">Contact Us</Link></li>
         </div>
+
         <div className="input_search">
-  
-
-
            <div className="search_container-nav">
            <i><IoSearchOutline /></i>
            <input type="search"/>
            </div>
-
-       
         </div>
       </div>
     </div>
-
-{/* slider */}
-
-
 
         </>
      );
 }
 
 export default Navbar;
-
-
-
-
-
-

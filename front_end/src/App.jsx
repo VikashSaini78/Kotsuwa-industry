@@ -6,6 +6,7 @@ import Customise from "./Compnont/Customise";
 import Footer from "./Compnont/Footer";
 import Catlog from "./Compnont/Catlog";
 import Contact from "./Compnont/Contact";
+import Navbar1 from "./Compnont/Contact";
 
 function App() {
   return ( 
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/customise" element={<Customise/>} />
-        <Route path="/contact" element={<Contact/>} />
+        <Route path="/contact" element={<Navbar1/>} />
         <Route path="/catlog" element={<Catlog/>} />
       </Routes>
       <Footer/>
