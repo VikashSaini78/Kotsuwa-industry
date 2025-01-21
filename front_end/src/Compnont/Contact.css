@@ -1,0 +1,167 @@
+.Contact_h2tag {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact_container {
+    width: 75%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: auto;
+    display: flex;
+    padding: 40px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.contant_container {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
+
+.contact_persan-div h3 {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.contact_persan-div p {
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+}
+
+.contact_persan-div {
+    padding: 15px;
+}
+.contact_persan-div i{
+    font-size: 17px;
+}
+
+.contact_page {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.username_input {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.username_input input {
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 1px;
+}
+
+.username_input input:focus {
+    box-shadow: none;
+}
+
+.contact_input {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+}
+
+.contact_input input {
+    margin-bottom: 20px;
+    font-size: 14px;
+    border-radius: 1px;
+}
+
+.contact_input input:focus {
+    box-shadow: none;
+}
+
+.pragraph_tag {
+    width: 90%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.pragraph_tag h6 {
+    font-size: 10px;
+}
+
+.pragraph_tag p {
+    margin: 0;
+    padding: 1px;
+    color: rgb(75, 75, 75);
+    font-size: 10px;
+}
+
+.textarea_contant {
+    width: 95%;
+    margin: auto;
+}
+
+.textarea_contant textarea {
+    margin: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 1px;
+}
+
+.textarea_contant textarea:focus {
+    box-shadow: none;
+}
+
+.submit_button-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit_button-text button {
+    width: 100px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 7px;
+    background-color: rgb(7, 87, 80);
+    color: white;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.submit_button-text button:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        /* background-color: aquamarine; */
+    }
+
+    .contant_container {
+        width: 100%;
+        margin: 10px 0;
+        /* background-color: rgb(214, 216, 218); */
+    }
+
+    .username_input,
+    .contact_input,
+    .textarea_contant {
+        width: 100%;
+        padding: 10px;
+       
+    }
+
+    .submit_button-text button {
+        width: 80%;
+        font-size: 16px;
+    }
+}

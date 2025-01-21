@@ -113,15 +113,15 @@ function Home() {
 
       <div className="card_sm-container">
       <div className="card_image-div">
-                <img src="./media/cotton1.jpg" alt="" />
+                <img src="./media/inimage1.webp" alt="" />
               </div>
 
           <div className="card_image-div">
-                <img src="./media/cotton9.jpg" alt="" />
+                <img src="./media/inimage2.webp" alt="" />
               </div>
 
               <div className="card_image-div">
-                <img src="./media/cotton12.jpg" alt="" />
+                <img src="./media/inimage5.webp" alt="" />
               </div>
 
       </div>
@@ -130,15 +130,15 @@ function Home() {
 {/* 2 */}
       <div className="card_sm-container_2">
       <div className="card_image-div">
-                <img src="./media/cotton4.webp" alt="" />
+                <img src="./media/inimage6.webp" alt="" />
               </div>
 
           <div className="card_image-div">
-                <img src="./media/cotton4.jpg" alt="" />
+                <img src="./media/inimage7.webp" alt="" />
               </div>
 
               <div className="card_image-div">
-                <img src="./media/cotton10.jpg" alt="" />
+                <img src="./media/inimage8.webp" alt="" />
               </div>
 
       </div>
@@ -161,11 +161,11 @@ function Home() {
       <div className="slider-container">
         <Slider {...settings}>
           <div className="slider_cardimg-div">
-            <img src="./media/colom1.jpg" alt="Cotton Bag 1" />
+            <img src="./media/inimage10.webp" alt="Cotton Bag 1" />
             {/* <div><button>Cotton Bags</button></div> */}
           </div>
           <div className="slider_cardimg-div">
-            <img src="./media/colom2.jpg" alt="Cotton Bag 2" />
+            <img src="./media/inimage11.webp" alt="Cotton Bag 2" />
             {/* <div><button>Cotton Bags</button></div> */}
           </div>
           <div className="slider_cardimg-div">
@@ -296,7 +296,7 @@ function Home() {
     {/* <h2>Sekawati Impex at Forbes India</h2> */}
      <div className="gupata_container">
      
-     <Link to={"/"}><img src="./media/colom8.avif" alt=""/></Link>
+     <Link to={"/"}><img src="./media/inimage12.webp" alt=""/></Link>
      </div>
     </div>
 </div>

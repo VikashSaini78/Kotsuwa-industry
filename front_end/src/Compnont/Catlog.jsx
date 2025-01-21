@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 function Catlog() {
   return (
     <>
       <div className='header_catlog-container'>
       <img src='./media/des4.webp' alt='error'/>
-        {/* <div><Link>Home</Link><h6>Catlog</h6></div> */}
       </div>
          
          <div className='OurProducts_continer'>
@@ -14,7 +13,10 @@ function Catlog() {
          Cotton Canvas Bags and aprons for various domestic and business requirements.
        </p>
          </div>
-         <div className='catlog_buttons'>
+         
+          
+          <div className='colom-m'>
+          <div className='catlog_buttons'>
          <button className='catlog_button-1'>Canvas Tote bags</button>
          <button className='catlog_button-1'>Cotton Tote Bags</button>
          <button className='catlog_button-1'>Denim Collection</button>
@@ -22,8 +24,8 @@ function Catlog() {
          <button className='catlog_button-1'>Laundry Bag</button>
          <button className='catlog_button-1'>Organic Canvas Bags</button>
          <button className='catlog_button-1'>Pouches Collection</button>
-         
          </div>
+          </div>
     </>
   )
 }
