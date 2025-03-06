@@ -6,35 +6,29 @@ footer{
     width: 100%;
     height: auto;
     background-color: rgb(255, 255, 255);
-    margin-top: 40px;
+    margin-top: 0px;
     box-shadow: rgba(5, 5, 5, 0.2) 0px 7px 29px 0px;
-  
-  
-  
 }
 
 .footer_logo p{
     font-size: 13px;
-    margin-top: 20px;
+    margin-top: 20px; 
     color: rgb(46, 46, 46);
 }
 .footer_logo img{
     width: 100%;
 }
 .footer_logo{
-    /* height: 300px; */
-    /* background-color: aliceblue; */
     margin-top: 40px;
     margin-bottom: 30px;
 }
 .Catalog_div{
-    /* height: 300px; */
-    /* background-color: aliceblue; */
     margin-top: 40px;
     margin-bottom: 30px;
 }
 .Catalog_div h6{
-color: rgb(233, 98, 35);
+    font-weight: bold;
+     color: rgb(233, 98, 35);
 }
 
 .Catalog_div p{
@@ -42,6 +36,19 @@ color: rgb(233, 98, 35);
     font-size: 13px;
     padding: 4px    ;
     margin: 0;
+
+}
+.footer_link{
+    color: rgb(46, 46, 46);
+    font-size: 12.3px;
+    font-weight: 500;
+    margin: 5px;
+
+}
+.footer_link:hover{
+    color: rgb(233, 98, 35);
+    text-decoration: underline;
+
 }
 
 .Catalog_div p:hover{
@@ -52,16 +59,22 @@ color: rgb(233, 98, 35);
     transform: scale(1.05);
 }
 
-/* footer_icons-div */
+/* footer_icons-div*/
 
 .footer_icons-div{
     height: 70px;
-    /* background-color: rgb(53, 55, 56); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: rgba(53, 55, 56, 0.055);
     font-size: 13px;
     color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_cncolom{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 .footer_icons-div p{
     width: 300px;
@@ -73,9 +86,7 @@ color: rgb(233, 98, 35);
     width: 150px;
 }
 .socal_media-icons{
-    /* width: 200px; */
-    /* background-color: rgb(79, 137, 187); */
-    gap: 7px;
+   gap: 7px;
     display: flex; 
  
 }
@@ -92,30 +103,61 @@ color: rgb(233, 98, 35);
     justify-content: center;
     align-items: center;
     color: rgb(255, 255, 255);
-border: 1px solid rgb(73, 73, 73);
-background-color: rgba(34, 34, 34, 0.63);
-border-radius: 50%;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: rgba(34, 34, 34, 0.63);
+    border-radius: 50%;
 }
+.Catalog_div img{
+    width: 13px;
+    color: rgb(233, 98, 35);
+}
+
 
 @media (max-width: 768px) {
     .footer_icons-div{
-        display: inline;
-    
+        height: 160px;
+        background-color: rgba(53, 55, 56, 0.055);
+       
+
     }
+    .Catalog_div{
+        text-align: start;
+    }
+   
     .socal_media-icons {
         gap: 7px;
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
     }
     .footer_icons-div p{
         padding-top: 15px;
     }
+    .footer_logo img{
+        margin: 0;
+    }
     .footer_logo p{
-    text-align: center;
     padding: 5px;
     font-size: 15px;
     }
-    .footer_icons-div{
+    /* .footer_icons-div{
         text-align: center;
+    } */
+    .footer_logo p {
+        font-size: 13px;
+        margin-top: 0;
+      }
+      .footer_logo {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
+    .footer_icons-div p {
+        width: 100%;
+        text-align: start;
+        margin: auto;
+        /* background-color: aliceblue; */
+    }
+    .footer_cncolom{
+        display: inline;
+    }
+
 }

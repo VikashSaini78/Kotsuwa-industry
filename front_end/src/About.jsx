@@ -11,26 +11,17 @@ function About() {
       </div>
       <div className="about_container">
         <div className="about_contant">
-          <h6>Missions and vision</h6>
-          <p>
-            Producing personalized cotton and jute bags in a sustainable
-            way. That is what TheCottonBag Company stands for. That is exactly
-            why we ensure continuous interaction between our headquarter in
-            Belgium and our production departments in India. In this way we can
-            take responsibility for the produced quality on the one hand and the
-            production method on the other; with a focus on people and the
-            planet.
-          </p>
-          <h6>Why India?</h6>
-          <p>
-            Our facilities in India, the land of cotton and jute, allow us to
-            guarantee the sustainability of our production. By working closely
-            with the local population and involving them in the decision-making
-            and production processes, we strive for the best possible
-            quality with attention to ethics in all its aspects. But apart from
-            the accessible production, there are many other reasons why
-            TheCottonBag Company has chosen India
-          </p>
+
+          <h6>Leading the Way in Cotton Bag Manufacturing</h6>
+          <p>Kotsuwa Industry is a leading manufacturer of high-quality cotton bags. We specialize in creating sustainable and eco-friendly alternatives to plastic, offering a wide range of stylish and durable bags for various purposes. Our commitment to exceptional quality and customer service sets us apart in the industry.</p>
+
+          <h6>Quality & Sustainability at the Core</h6>
+          <p>At Kotsuwa Industry, we believe in the power of sustainable choices. We are dedicated to manufacturing eco-friendly cotton bags that are not only stylish but also built to last. Our focus on quality craftsmanship and ethical production ensures you receive products that are kind to the environment and designed to stand the test of time.</p>
+
+          <h6>Customer-Centric Approach for Your Needs</h6>
+          <p>Kotsuwa Industry is your trusted partner for high-quality cotton bags. We understand the importance of customer satisfaction and strive to provide exceptional service at every step. Whether you need custom-designed bags or ready-made solutions, we work closely with you to meet your specific needs and exceed your expectations.</p>
+
+      
         </div>
       </div>
     </>

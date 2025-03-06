@@ -9,9 +9,12 @@
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: auto;
-    display: flex;
+    /* display: flex; */
     padding: 40px;
-    flex-wrap: wrap; /* Ensure responsiveness */
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    /* background: #000; */
+    display: flex;
 }
 
 .contant_container {
