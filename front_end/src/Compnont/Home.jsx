@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Home() {
   const settings = {
     className: "center",
@@ -28,6 +30,17 @@ function Home() {
       );
     },
   };
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1000, 
+      once: true,
+      disable: function () {
+      return window.innerWidth > 768; 
+      
+      },
+    });
+  }, []);
   return (
     <>
       {/* slider image */}
@@ -56,7 +69,7 @@ function Home() {
               {/* <img className="img-fluid" src="media/des11.jpeg" className="d-block w-100" alt="img error"/> */}
               <img
                 className="img-fluid"
-                src="media/picsart_23.jpg"
+                src="media/slider1.jpg"
                 alt="img error"
               />
             </div>
@@ -69,41 +82,51 @@ function Home() {
       <section className="sectionBx pt-5 bkWhite">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-12">
-              <div className="section-title text-center mb-5">
-                {/* <h2>Portfolio</h2> */}
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-              <div className="card_image-div">
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
+            data-aos="fade-right"
+            >
+            <div className="card_image-div">
                 <img
                   className="img-fluid"
                   src="media/cotton4.webp"
                   alt="error"
                 />
-              </div>
+                <button>Tote Bags</button>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
+            data-aos="fade-left"
+            >
               <div className="card_image-div">
-                <img className="img-fluid" src="media/inimage2.webp" alt="" />
+                <img className="img-fluid" src="media/canvas1.jpeg" alt="" />
+                <button>Shopping Bags</button>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
+              data-aos="fade-right"
+            >
               <div className="card_image-div">
                 <img className="img-fluid" src="media/coton1.png" alt="" />
+                <button>Travel Bags</button>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
+             data-aos="fade-left"
+            >
               <div className="card_image-div">
                 <img className="img-fluid" src="media/coton2.png" alt="" />
+                <button>Cotton  Bags</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="banner_container">
+      <section className="banner_container"
+      data-aos="zoom-in"
+      >
         <img className="img-fluid" src="media/banner.png" />
       </section>
+
       <section className="sectionBx pt-5 pb-5 bkWhite">
         <div className="container">
           <div className="row">
@@ -114,17 +137,19 @@ function Home() {
             </div>
             <div className="col-lg-12">
               <Slider {...settings}>
-                <div className="slider_cardimg-div">
+                 
+                 {/* <div> */}
+                 <div className="slider_cardimg-div">
                   <img src="media/cotton14.jpg" alt="Cotton Bag 1" />
-                  {/* 
-            <div><button>Cotton Bags</button></div>
-            */}
                 </div>
+                {/* <div><button>Cotton Bags</button></div> */}
+                 {/* </div> */}
+
                 <div className="slider_cardimg-div">
                   <img src="media/inimage11.webp" alt="Cotton Bag 2" />
-                  {/* 
-            <div><button>Cotton Bags</button></div>        
-            */}
+                  
+            {/* <div><button>Cotton Bags</button></div>         */}
+           
                 </div>
                 <div className="slider_cardimg-div">
                   <img
@@ -132,9 +157,9 @@ function Home() {
                     src="media/colom3.jpg"
                     alt="Cotton Bag 3"
                   />
-                  {/* 
-            <div><button>Cotton Bags</button></div>
-            */}
+                  
+            {/* <div><button>Cotton Bags</button></div> */}
+           
                 </div>
                 <div className="slider_cardimg-div">
                   <img
@@ -142,9 +167,9 @@ function Home() {
                     src="media/colom4.jpg"
                     alt="Cotton Bag 4"
                   />
-                  {/* 
-            <div><button>Cotton Bags</button></div>
-            */}
+                  
+            {/* <div><button>Cotton Bags</button></div> */}
+           
                 </div>
                 <div className="slider_cardimg-div">
                   <img
@@ -152,9 +177,9 @@ function Home() {
                     src="media/colom6.jpg"
                     alt="Cotton Bag 5"
                   />
-                  {/* 
-            <div><button>Cotton Bags</button></div>
-            */}
+                  
+            {/* <div><button>Cotton Bags</button></div> */}
+           
                 </div>
               </Slider>
             </div>
@@ -166,7 +191,9 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-12">
-              <div className="testimonialBody">
+              <div className="testimonialBody"
+               data-aos="zoom-in"
+              >
                 <div className="Impex_Forbes-div">
                   <div className="md_container">
                     <div className="gupata_container">
@@ -240,7 +267,9 @@ function Home() {
         <h3 className="about-compney">About Company</h3>
         <div className="container">
           <div className="row">
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6 ">
+            <div className="col-md-3 col-lg-3 col-sm-6 col-6 "
+            data-aos="fade-right"
+            >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
                   <img className="img-fluid" src="media/about-icon-1.png" />
@@ -248,7 +277,9 @@ function Home() {
                 <p>Nature of Business-Manufacturer</p>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6">
+            <div className="col-md-3 col-lg-3 col-sm-6 col-6"
+            data-aos="fade-left"
+            >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
                   <img className="img-fluid" src="media/about-icon-2.png" />
@@ -256,7 +287,9 @@ function Home() {
                 <p>Total Number of Employees- 101 to 500r</p>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6">
+            <div className="col-md-3 col-lg-3 col-sm-6 col-6"
+            data-aos="fade-right"
+            >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
                   <img className="img-fluid" src="media/about-icon-3.png" />
@@ -264,7 +297,9 @@ function Home() {
                 <p>Year of Establishment- 1991</p>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6">
+            <div className="col-md-3 col-lg-3 col-sm-6 col-6"
+            data-aos="fade-left"
+            >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
                   <img className="img-fluid" src="media/about-icon-4.png" />
@@ -277,6 +312,7 @@ function Home() {
       </section>
 
       {/* About Company */}
+
       <section className="sectionBx pt-5 pb-5 bkgrey">
         <div className="container">
           <div className="row">
@@ -288,7 +324,9 @@ function Home() {
           </div>
           <div className="row bkWhite">
             <div className="col-md-6 youtube_video_box">
-              <div className="youtube_video">
+              <div className="youtube_video"
+              data-aos="zoom-in-down"
+              >
                 <div className="invoice_Details-container">
                   <div className="ratio ratio-16x9">
                     {/* <iframe
@@ -308,7 +346,9 @@ function Home() {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="Looking_form-div">
+              <div className="Looking_form-div"
+              data-aos="zoom-in-up"
+              >
                 <label className="form-label">Name</label>
                 <input type="text" className="form-control" />
                 <label className="form-label">Phone Number</label>

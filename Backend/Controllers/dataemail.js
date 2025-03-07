@@ -46,7 +46,7 @@ exports.queremailController = async (req, res) => {
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: ["vikashbanskhoh@gmail.com", req.body.email], // Send email to both admin & user
+            to: ["rohitsainia8387@gmail.com", req.body.email], // Send email to both admin & user
             subject: "Order Confirmation - Style Savvy",
             text: emailContent, // Send as plain text
         };

@@ -4,10 +4,10 @@ function About() {
   return (
     <>
       <div className="home_abut-page">
-        <p>
+        {/* <p>
           <Link to={"/"}>Home</Link> /{" "}
-        </p>
-        <p>About Us</p>
+        </p> */}
+        <h1>About Us</h1>
       </div>
       <div className="about_container">
         <div className="about_contant">

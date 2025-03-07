@@ -32,7 +32,7 @@ function Contact() {
             </h3>
             <p>
             
-              Add-117B, Ram Nagar, Toll Tax, Tehsil Sanaganer, Jaipur,
+              117B, Ram Nagar, Toll Tax, Tehsil Sanaganer, Jaipur,
               Rajasthan, 302022
             </p>
           </div>
@@ -58,12 +58,17 @@ function Contact() {
             <p>kotsuwaindustry@gmail.com</p>
           </div>
         </div>
+
+
+
+    {/* input container  */}
+
         <div className="input_container">
           <div className="contact_page">
             <div className="username_input">
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 placeholder="First name"
               />
               <input type="text" class="form-control" placeholder="Last name" />

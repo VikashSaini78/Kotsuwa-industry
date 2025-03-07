@@ -10,7 +10,7 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
+  const closeMenu = () => { 
     setIsMenuOpen(false);
   };
 
@@ -76,3 +76,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
