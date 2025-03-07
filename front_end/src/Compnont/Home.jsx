@@ -121,11 +121,16 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* banner  */}
+
       <section className="banner_container"
       data-aos="zoom-in"
       >
         <img className="img-fluid" src="media/banner.png" />
       </section>
+
+      {/* slider images  */}
 
       <section className="sectionBx pt-5 pb-5 bkWhite">
         <div className="container">
@@ -186,6 +191,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* testimonial */}
 
       <section className="sectionBx pt-5 pb-4 testimonial-bx ">
         <div className="container">

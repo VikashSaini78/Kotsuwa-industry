@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { data, Link, useLocation, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Slider from "react-slick";
 
 function Quaryproduct() {
   const { id } = useParams();
@@ -42,6 +43,33 @@ function Quaryproduct() {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     setCount(cart.length);
   }, []);
+
+  const settings = {
+    className: "center",
+    infinite: true,
+    centerPadding: "60px",
+    swipeToSlide: true,
+    slidesToShow: 4, // Default for desktop
+    responsive: [
+      {
+        breakpoint: 1024, // Tablet and below
+        settings: {
+          slidesToShow: 3, // Show 3 cards on tablets
+        },
+      },
+      {
+        breakpoint: 768, // Mobile devices
+        settings: {
+          slidesToShow: 2, // Show 3 cards on mobiles
+        },
+      },
+    ],
+    afterChange: function (index) {
+      console.log(
+        `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+      );
+    },
+  };
 
   return (
     <>
@@ -210,11 +238,78 @@ function Quaryproduct() {
               </table>
             </div>
           </div>
+
+          <div className="quary_image-slider">
+          <section className="sectionBx pt-5 pb-5 bkWhite">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center mb-5">
+                <h2>Our Products</h2>
+              </div>
+            </div>
+            <div className="col-lg-12">
+              <Slider {...settings}>
+                 
+                 {/* <div> */}
+                 <div className="slider_cardimg-div">
+                  <img src="media/cotton14.jpg" alt="Cotton Bag 1" />
+                </div>
+                {/* <div><button>Cotton Bags</button></div> */}
+                 {/* </div> */}
+
+                <div className="slider_cardimg-div">
+                  <img src="media/inimage11.webp" alt="Cotton Bag 2" />
+                  
+            {/* <div><button>Cotton Bags</button></div>         */}
+           
+                </div>
+                <div className="slider_cardimg-div">
+                  <img
+                    className="img-fluid"
+                    src="media/colom3.jpg"
+                    alt="Cotton Bag 3"
+                  />
+                  
+            {/* <div><button>Cotton Bags</button></div> */}
+           
+                </div>
+                <div className="slider_cardimg-div">
+                  <img
+                    className="img-fluid"
+                    src="media/colom4.jpg"
+                    alt="Cotton Bag 4"
+                  />
+                  
+            {/* <div><button>Cotton Bags</button></div> */}
+           
+                </div>
+                <div className="slider_cardimg-div">
+                  <img
+                    className="img-fluid"
+                    src="media/colom6.jpg"
+                    alt="Cotton Bag 5"
+                  />
+                  
+            {/* <div><button>Cotton Bags</button></div> */}
+           
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </div>
+      </section>
+          </div>
+        
         </>
+      
       ) : (
         <p>Loading product details...</p>
       )}
            </div>
+
+
+         
     </>
   );
 }
