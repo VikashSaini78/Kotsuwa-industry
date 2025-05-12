@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { FaCartPlus } from "react-icons/fa";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { FaBars } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
@@ -102,7 +102,7 @@ useEffect(() => {
         <div className="Add_to_card-button">
           <Link className="link" to="/shopcard">
             <i>
-              <FaCartPlus />
+         <HiOutlineShoppingBag />
               <span>{count}</span>
             </i>
           </Link>

@@ -72,7 +72,7 @@ function Footer() {
          </div>
          <p>
          ©2025, KOTSUWA INDUSTRY
-         WEBSITE DESIGN & DEVELOPED BY : <Link className='link-insta' to={"https://www.instagram.com/"}>vicky76</Link>
+         WEBSITE DESIGN & DEVELOPED BY : <Link className='link-insta' to={"https://www.instagram.com/"} target='blanck'>vicky76</Link>
          </p>
          <div>
          <img src='./media/payment.png' alt=''/>

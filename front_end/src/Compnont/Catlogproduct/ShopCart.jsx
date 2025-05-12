@@ -56,7 +56,9 @@ function ShopCart() {
           ))
         ) : (
           <div className="empty_cart">
-         <div className="empty-card_sm"> <i className="empty_cart-emoji"><FaSadTear /></i>
+         <div className="empty-card_sm"> <div className="empty_cart-emoji">
+          <img src="./media/global-wor.png"/>
+         </div>
             <p>Your cart is currently empty!</p>
             <h6>Browse store</h6>
             <h2>...</h2>
