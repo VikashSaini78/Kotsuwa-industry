@@ -10,7 +10,7 @@ exports.queremailController = async (req, res) => {
         const missingFields = requiredFields.filter(field => !req.body[field]);
 
         if (missingFields.length > 0) {
-            console.error("❌ Missing fields:", missingFields);
+            console.error(" Missing fields:", missingFields);
             return res.status(400).json({ error: `Missing fields: ${missingFields.join(", ")}` });
         }
 
@@ -38,16 +38,16 @@ exports.queremailController = async (req, res) => {
             - 📅 Delivery Date: ${req.body.deliveryDate}
             - 📜 Requirement: ${req.body.requirement}
 
-            Thank you for choosing Style Savvy! We will process your order soon.
+            Thank you for choosing kotsuwai ndustry! We will process your order soon.
 
             Best Regards,  
-            **Style Savvy Team**  
+            **kotsuwa industry Team**  
         `;
 
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: ["rohitsainia8387@gmail.com", req.body.email], // Send email to both admin & user
-            subject: "Order Confirmation - Style Savvy",
+            to: ["kotsuwaindustry@gmail.com", req.body.email], // Send email to both admin & user
+            subject: "Order Confirmation - kotsuwai ndustry",
             text: emailContent, // Send as plain text
         };
 

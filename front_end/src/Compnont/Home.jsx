@@ -33,11 +33,10 @@ function Home() {
 
   useEffect(() => {
     Aos.init({
-      duration: 1000, 
+      duration: 1000,
       once: true,
       disable: function () {
-      return window.innerWidth > 768; 
-      
+        return window.innerWidth > 768;
       },
     });
   }, []);
@@ -82,40 +81,52 @@ function Home() {
       <section className="sectionBx pt-5 bkWhite">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
-            data-aos="fade-right"
-            >
-            <div className="card_image-div">
-                <img
-                  className="img-fluid"
-                  src="media/cotton4.webp"
-                  alt="error"
-                />
-                <button>Tote Bags</button>
-            </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
-            data-aos="fade-left"
-            >
-              <div className="card_image-div">
-                <img className="img-fluid" src="media/canvas1.jpeg" alt="" />
-                <button>Shopping Bags</button>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 col-6"
               data-aos="fade-right"
             >
               <div className="card_image-div">
-                <img className="img-fluid" src="media/coton1.png" alt="" />
+                <Link to={"/catlog"}>
+                  <img
+                    className="img-fluid"
+                    src="media/cotton4.webp"
+                    alt="error"
+                  />
+                </Link>
+                <button>Tote Bags</button>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 col-6"
+              data-aos="fade-left"
+            >
+              <div className="card_image-div">
+                <Link to={"/catlog"}>
+                  <img className="img-fluid" src="media/canvas1.jpeg" alt="" />
+                </Link>
+                <button>Shopping Bags</button>
+              </div>
+            </div>
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 col-6"
+              data-aos="fade-right"
+            >
+              <div className="card_image-div">
+                <Link to={"/catlog"}>
+                  <img className="img-fluid" src="media/coton1.png" alt="" />
+                </Link>
                 <button>Travel Bags</button>
               </div>
             </div>
-            <div className="col-lg-3 col-md-4 col-sm-6 col-6"
-             data-aos="fade-left"
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 col-6"
+              data-aos="fade-left"
             >
               <div className="card_image-div">
-                <img className="img-fluid" src="media/coton2.png" alt="" />
-                <button>Cotton  Bags</button>
+                <Link to={"/catlog"}>
+                  <img className="img-fluid" src="media/coton2.png" alt="" />
+                </Link>
+                <button>Cotton Bags</button>
               </div>
             </div>
           </div>
@@ -124,9 +135,7 @@ function Home() {
 
       {/* banner  */}
 
-      <section className="banner_container"
-      data-aos="zoom-in"
-      >
+      <section className="banner_container" data-aos="zoom-in">
         <img className="img-fluid" src="media/banner.png" />
       </section>
 
@@ -142,49 +151,58 @@ function Home() {
             </div>
             <div className="col-lg-12">
               <Slider {...settings}>
-                 
-                 {/* <div> */}
-                 <div className="slider_cardimg-div">
-                  <img src="media/cotton14.jpg" alt="Cotton Bag 1" />
+                {/* <div> */}
+                <div className="slider_cardimg-div">
+                  <Link to={"/catlog"}>
+                    <img src="media/cotton14.jpg" alt="Cotton Bag 1" />
+                  </Link>
                 </div>
                 {/* <div><button>Cotton Bags</button></div> */}
-                 {/* </div> */}
+                {/* </div> */}
 
                 <div className="slider_cardimg-div">
-                  <img src="media/inimage11.webp" alt="Cotton Bag 2" />
-                  
-            {/* <div><button>Cotton Bags</button></div>         */}
-           
+                  <Link to={"/catlog"}>
+                 
+                    <img src="media/inimage11.webp" alt="Cotton Bag 2" />
+                  </Link>
+
+                  {/* <div><button>Cotton Bags</button></div>         */}
                 </div>
                 <div className="slider_cardimg-div">
-                  <img
-                    className="img-fluid"
-                    src="media/colom3.jpg"
-                    alt="Cotton Bag 3"
-                  />
-                  
-            {/* <div><button>Cotton Bags</button></div> */}
-           
+                <Link to={"/catlog"}>
+                 
+                    <img
+                      className="img-fluid"
+                      src="media/colom3.jpg"
+                      alt="Cotton Bag 3"
+                    />
+                  </Link>
+
+                  {/* <div><button>Cotton Bags</button></div> */}
                 </div>
                 <div className="slider_cardimg-div">
-                  <img
-                    className="img-fluid"
-                    src="media/colom4.jpg"
-                    alt="Cotton Bag 4"
-                  />
-                  
-            {/* <div><button>Cotton Bags</button></div> */}
-           
+                  <Link to={"/catlog"}>
+                    {" "}
+                    <img
+                      className="img-fluid"
+                      src="media/colom4.jpg"
+                      alt="Cotton Bag 4"
+                    />{" "}
+                  </Link>
+
+                  {/* <div><button>Cotton Bags</button></div> */}
                 </div>
                 <div className="slider_cardimg-div">
-                  <img
-                    className="img-fluid"
-                    src="media/colom6.jpg"
-                    alt="Cotton Bag 5"
-                  />
-                  
-            {/* <div><button>Cotton Bags</button></div> */}
-           
+                  <Link to={"/catlog"}>
+                    {" "}
+                    <img
+                      className="img-fluid"
+                      src="media/colom6.jpg"
+                      alt="Cotton Bag 5"
+                    />
+                  </Link>
+
+                  {/* <div><button>Cotton Bags</button></div> */}
                 </div>
               </Slider>
             </div>
@@ -198,9 +216,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-12">
-              <div className="testimonialBody"
-               data-aos="zoom-in"
-              >
+              <div className="testimonialBody" data-aos="zoom-in">
                 <div className="Impex_Forbes-div">
                   <div className="md_container">
                     <div className="gupata_container">
@@ -274,8 +290,9 @@ function Home() {
         <h3 className="about-compney">About Company</h3>
         <div className="container">
           <div className="row">
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6 "
-            data-aos="fade-right"
+            <div
+              className="col-md-3 col-lg-3 col-sm-6 col-6 "
+              data-aos="fade-right"
             >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
@@ -284,8 +301,9 @@ function Home() {
                 <p>Nature of Business-Manufacturer</p>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6"
-            data-aos="fade-left"
+            <div
+              className="col-md-3 col-lg-3 col-sm-6 col-6"
+              data-aos="fade-left"
             >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
@@ -294,8 +312,9 @@ function Home() {
                 <p>Total Number of Employees- 101 to 500r</p>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6"
-            data-aos="fade-right"
+            <div
+              className="col-md-3 col-lg-3 col-sm-6 col-6"
+              data-aos="fade-right"
             >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
@@ -304,8 +323,9 @@ function Home() {
                 <p>Year of Establishment- 1991</p>
               </div>
             </div>
-            <div className="col-md-3 col-lg-3 col-sm-6 col-6"
-            data-aos="fade-left"
+            <div
+              className="col-md-3 col-lg-3 col-sm-6 col-6"
+              data-aos="fade-left"
             >
               <div className="Business-Manufacturer">
                 <div className="sectionIcon">
@@ -331,9 +351,7 @@ function Home() {
           </div>
           <div className="row bkWhite">
             <div className="col-md-6 youtube_video_box">
-              <div className="youtube_video"
-              data-aos="zoom-in-down"
-              >
+              <div className="youtube_video" data-aos="zoom-in-down">
                 <div className="invoice_Details-container">
                   <div className="ratio ratio-16x9">
                     {/* <iframe
@@ -353,9 +371,7 @@ function Home() {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="Looking_form-div"
-              data-aos="zoom-in-up"
-              >
+              <div className="Looking_form-div" data-aos="zoom-in-up">
                 <label className="form-label">Name</label>
                 <input type="text" className="form-control" />
                 <label className="form-label">Phone Number</label>

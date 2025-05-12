@@ -55,9 +55,9 @@ exports.queremailController = async (req, res) => {
       // Define email options
       const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: ["vikashbanskhoh@gmail.com", email], // Send to admin & user
+        to: ["kotsuwaindustry@gmail.com", email], // Send to admin & user
         subject: "Order Confirmation",
-        text: `Dear ${name},\n\nYour order has been received.\n\nDetails:\n- Contact: ${contact}\n- Address: ${address}, ${roadName}, ${city}, ${state} - ${pincode}\n- Nearby: ${nearby}\n\nThank you for shopping with us!\n\nBest Regards,\nStyle Savvy`,
+        text: `Dear ${name},\n\nYour order has been received.\n\nDetails:\n- Contact: ${contact}\n- Address: ${address}, ${roadName}, ${city}, ${state} - ${pincode}\n- Nearby: ${nearby}\n\nThank you for shopping with us!\n\nBest Regards,\nkotsuwa industry Team`,
         attachments: imagePath ? [{ filename: path.basename(imagePath), path: imagePath }] : [],
       };
 
@@ -78,67 +78,3 @@ exports.queremailController = async (req, res) => {
 exports.upload = upload;
 
 
-
-// const nodemailer = require("nodemailer");
-// const multer = require("multer");
-// const path = require("path");
-// const fs = require("fs");
-// require("dotenv").config();
-
-// // Ensure uploads directory exists
-// const uploadDir = path.join(__dirname, "../uploads");
-// if (!fs.existsSync(uploadDir)) {
-//   fs.mkdirSync(uploadDir, { recursive: true });
-// }
-
-// // Configure Multer for File Uploads
-// const storage = multer.diskStorage({
-//   destination: function (req, file, cb) {
-//     cb(null, uploadDir);
-//   },
-//   filename: function (req, file, cb) {
-//     cb(null, Date.now() + path.extname(file.originalname));
-//   },
-// });
-
-// const upload = multer({ storage }).single("image");
-
-// exports.queremailController = async (req, res) => {
-//   upload(req, res, async (err) => {
-//     if (err) {
-//       return res.status(500).json({ error: "Image upload failed", details: err.message });
-//     }
-
-//     console.log("📩 Received Body Data:", req.body);
-
-//     try {
-//       const { name, contact, email, productTitle, productCategory } = req.body;
-
-//       if (!contact) {
-//         return res.status(400).json({ error: "Field 'contact' is required" });
-//       }
-
-//       const transporter = nodemailer.createTransport({
-//         service: "gmail",
-//         auth: {
-//          user: "sstylesavvy@gmail.com", // Fetch from .env file
-//           pass: "zoqgjtigucocvdzo", // Fetch from .env file
-//         },
-//       });
-
-//       const mailOptions = {
-//         from: process.env.EMAIL_USER,
-//         to: ["vikashbanskhoh@gmail.com", email],
-//         subject: "Order Confirmation - Style Savvy",
-//         text: `Dear ${name}, Your order has been received. Contact: ${contact}`,
-//       };
-
-//       await transporter.sendMail(mailOptions);
-//       res.status(200).json({ message: "Email sent successfully" });
-//     } catch (error) {
-//       res.status(500).json({ error: "Internal Server Error" });
-//     }
-//   });
-// };
-
-// exports.upload = upload;

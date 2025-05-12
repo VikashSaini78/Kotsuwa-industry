@@ -1,4 +1,4 @@
-const Product = require("../models/Product");
+const Product = require("../Models/Product");
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
@@ -29,7 +29,7 @@ exports.productController = (req, res) => {
     }
 
     try {
-      const { name, pattern, country, style, size, material, minOrderQty, color, brand, category } = req.body;
+      const { name, pattern, country, style, size, material, minOrderQty, color, brand,category,newprice,oldprice } = req.body;
       const filePath = req.file ? `/uploads/${req.file.filename}` : null; // Store relative path
 
       // Create a new product with file path
@@ -44,6 +44,8 @@ exports.productController = (req, res) => {
         color,
         brand,
         category, // Save category
+        oldprice,
+        newprice,
         file: filePath,
       });
 

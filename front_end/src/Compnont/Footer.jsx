@@ -21,17 +21,22 @@ function Footer() {
       <div className='col-md-3'>
       <div className='Catalog_div'>
       <h6>Catalog</h6>
-     <p><img src='./media/footericon.jpg'alt=''/> Cotton Tote bags</p>
-     <p><img src='./media/footericon.jpg'alt=''/> Canvas Tote bags</p>
-     <p><img src='./media/footericon.jpg'alt=''/> Organic Canvas Bags</p>
-     <p><img src='./media/footericon.jpg'alt=''/> Denim Collection</p>
-     <p><img src='./media/footericon.jpg'alt=''/> Pouches Collection</p>
+      <Link className='fotterlink' to={"/catlog"}><p><img src='./media/footericon.jpg'alt=''/> Cotton Tote bags</p></Link>
+      <Link className='fotterlink' to={"/catlog"}><p><img src='./media/footericon.jpg'alt=''/> Canvas Tote bags</p></Link>
+      <Link className='fotterlink' to={"/catlog"}><p><img src='./media/footericon.jpg'alt=''/> Organic Canvas Bags</p></Link>
+      <Link className='fotterlink' to={"/catlog"}><p><img src='./media/footericon.jpg'alt=''/> Denim Collection</p></Link>
+      <Link className='fotterlink' to={"/catlog"}> <p><img src='./media/footericon.jpg'alt=''/> Pouches Collection</p></Link>
+     
+     
+     
+    
 
       </div>
       </div>
       <div className='col-md-3'>
       <div className='Catalog_div'>
       <h6>  Profile</h6>
+      <Link></Link>
      <p><img src='./media/footericon.jpg'alt=''/> Corporate Presentation</p>
      <p><img src='./media/footericon.jpg'alt=''/> Corporate Video</p>
      <p><img src='./media/footericon.jpg'alt=''/> Corporate Brochure</p>
@@ -62,12 +67,12 @@ function Footer() {
          <div className='socal_media-icons'>
          <i><CiFacebook/></i>
          <i><FaGoogle/></i>
-         <i><FaLinkedin/></i>
+         <Link to={"https://www.linkedin.com/in/vikash-saini-a6448226b/"} target='blank'><i><FaLinkedin/></i></Link>
          <i><CiTwitter/></i>
          </div>
          <p>
          ©2025, KOTSUWA INDUSTRY
-         WEBSITE DESIGN & DEVELOPED BY : VICKY JAITPURIYA
+         WEBSITE DESIGN & DEVELOPED BY : <Link className='link-insta' to={"https://www.instagram.com/"}>vicky76</Link>
          </p>
          <div>
          <img src='./media/payment.png' alt=''/>

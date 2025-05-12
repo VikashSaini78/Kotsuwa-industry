@@ -26,6 +26,9 @@ footer{
     margin-top: 40px;
     margin-bottom: 30px;
 }
+.fotterlink{
+    text-decoration: none;
+}
 .Catalog_div h6{
     font-weight: bold;
      color: rgb(233, 98, 35);
@@ -112,6 +115,12 @@ footer{
     color: rgb(233, 98, 35);
 }
 
+.link-insta{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    cursor: text;
+}
 
 @media (max-width: 768px) {
     .footer_icons-div{

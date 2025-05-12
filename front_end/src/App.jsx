@@ -14,6 +14,7 @@ import Quaryproduct from "./Compnont/Catlogproduct/Quaryproduct";
 import ShopCart from "./Compnont/Catlogproduct/ShopCart";
 import ByProduct from "./Compnont/Catlogproduct/ByProduct";
 import Address from "./Compnont/Catlogproduct/Address";
+import Insertdata from "./Compnont/Curd/Insertdata";
 
 function App() {
   return ( 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/shopcard" element={<ShopCart />} />
         <Route path="/byproduct" element={<ByProduct/>} />
         <Route path="/address" element={<Address/>} />
+        <Route path="/insertproductdata" element={<Insertdata/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>
