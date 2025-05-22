@@ -74,8 +74,7 @@ li {
 .Add_to_card-button i {
   font-size: 20px;
   color: rgb(13, 102, 102);
-  /* margin: 10px; */
- 
+
 }
 .Add_to_card-button span {
 font-size: 12px;
@@ -175,7 +174,7 @@ font-size: 12px;
 
 
 
-.slider_image-div {
+/* .slider_image-div {
   width: 100%;
   height: 100%;
 }
@@ -190,7 +189,19 @@ font-size: 12px;
   object-fit: cover;
 
 
+} */
+ .slider_wrapper {
+  max-width: 1200px;     /* set your desired width */
+  margin: 0 auto;        /* center horizontally */ /* padding: 0 15px;       for some left-right spacing on mobile */
 }
+
+.slider_image-div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+     /* optional, for smooth edges */
+}
+
 
 /* business_container */
 
@@ -882,9 +893,10 @@ div#root {
 
 /* Query Image Box */
 .quary_image-box {
-  width: 40%;
-  /* height: 75vh; */
-  /* background-color: #666; */
+  width: 36%;
+  height: 80vh;
+  /* background-color: #b1a3a3; */
+  border: 1px solid gray;
   overflow: hidden;
   /* Prevents image overflow */
 }
@@ -914,6 +926,16 @@ div#root {
   gap: 5px;
   flex-wrap: wrap;
   /* Allows wrapping if needed */
+}
+.stock_text{
+ font-weight: bold;
+ color: black;
+ font-size: 13px;
+}
+.stock_text i{
+  color: rgb(126, 211, 36);
+  /* background-color: #00ff08; */
+  font-size: 13px;
 }
 
 .colom_h6-text h6 {
@@ -1634,11 +1656,13 @@ text-align: center;
   .navbar_container {
     height: 70px;
     
+    
   }
   .nav_menu-container{
     display: flex;
      justify-content: center;
      align-items: center;
+     /* background: #000; */
   }
 
   .menu_toggle {
@@ -1662,9 +1686,28 @@ text-align: center;
     z-index: 1;
 
   }
+  /* .Add_to_card-button i {
+  font-size: 20px;
+  color: rgb(13, 102, 102);
+  display: block;
+
+} */
+ .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  order: 2;
+}
+
+.right {
+  order: 1;
+}
+
 
   .contents.open {
-    top: 60px;
+    top: 69px;
     opacity: 1;
   }
 
@@ -1711,13 +1754,16 @@ text-align: center;
     object-fit: cover;
   }
 
-  .slider_image-div {
+  /* .slider_image-div {
     width: 100%;
     height: auto;
-    /* background-color: #833838; */
+    background-color: #833838;
     overflow: hidden;
+  } */
+  .slider_wrapper {
+    max-width: 100%;
+    /* padding: 0 10px; */
   }
-
   .card-container {
     width: 100%;
     height: auto;
@@ -1937,6 +1983,16 @@ text-align: center;
    .input_lable-getproduct select{
     width: 67%;
 }
+/* .card_box img {
+margin: auto;
+} */
+.card_box {
+  display: flex;
+  margin: 15px 0;
+  /* text-align: center; */
+
+}
+
 
 }
 
@@ -2094,3 +2150,4 @@ text-align: center;
 
 
 }
+

@@ -3,6 +3,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { FaBars } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
+
 function Navbar() {
   const [count, setCount] = useState(0);
   const location = useLocation();
@@ -65,7 +66,7 @@ useEffect(() => {
 
 
           <div className="nav_menu-container">
-            <div className="menu_toggle" onClick={toggleMenu}>
+            <div className="menu_toggle right" onClick={toggleMenu}>
           <FaBars />
         </div>
                  <div className={`contents ${isMenuOpen ? "open" : ""}`}>
@@ -100,12 +101,13 @@ useEffect(() => {
         {/* add to card */}
 
         <div className="Add_to_card-button">
-          <Link className="link" to="/shopcard">
+          <Link className="link left" to="/shopcard">
             <i>
          <HiOutlineShoppingBag />
               <span>{count}</span>
             </i>
           </Link>
+        
         </div>
           </div>
       </div>

@@ -3,6 +3,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Slider from "react-slick";
+import { GoVerified } from "react-icons/go";
 
 function Quaryproduct() {
   const { id } = useParams();
@@ -97,33 +98,59 @@ function Quaryproduct() {
 
               <div className="quary_text-colom">
                 <h4>{product.name}</h4>
+                <div>
+                  <h6 className="stock_text">
+                
+                    <strong>
+                     
+                      <i><GoVerified /></i>
+                      &nbsp; Yes in stock
+                    </strong>
+                  </h6>
+                </div>
+
                 <div className="colom_h6-text">
-                  <h6>Pattern :</h6>
+                  <h6>
+                    <strong>Pattern :</strong>
+                  </h6>
                   <p>Plain</p>
                 </div>
                 <div className="colom_h6-text">
-                  <h6>Country of Origin :</h6>
+                  <h6>
+                    <strong>Country of Origin :</strong>
+                  </h6>
                   <p>India</p>
                 </div>
                 <div className="colom_h6-text">
-                  <h6>Style :</h6>
+                  <h6>
+                    <strong>Style :</strong>
+                  </h6>
                   <p>{product.style || "N/A"}</p>
                 </div>
                 <div className="colom_h6-text">
-                  <h6>Size :</h6>
+                  <h6>
+                    <strong>Size :</strong>
+                  </h6>
                   <p>{product.size || "N/A"}</p>
                 </div>
                 <div className="colom_h6-text">
-                  <h6>Price :</h6>
+                  <h6>
+                    <strong>Price :</strong>
+                  </h6>
                   <p>₹{product.newprice || "N/A"}</p>
                 </div>
                 <div className="colom_h6-text">
-                  <h6>Material :</h6>
+                  <h6>
+                    <strong>Material :</strong>
+                  </h6>
                   <p>{product.material || "N/A"}</p>
                 </div>
 
                 <div className="contactme_buttons">
-                 <a href="#"> <button onClick={handleAddToCart}>Add To Enquiry</button></a>
+                  <a href="#">
+                    {" "}
+                    <button onClick={handleAddToCart}>Add To Enquiry</button>
+                  </a>
                   {/* <Link to={""}><button>WhatsApp Enquiry</button></Link> */}
                   <a
                     href="https://wa.me/918824448505?text=I%20am%20interested%20in%20your%20product"
@@ -142,7 +169,9 @@ function Quaryproduct() {
                   <h5>Additional Information:</h5>
                 </div>
                 <div className="Delivery_Timet-ext">
-                  <h6>Delivery Time :</h6>
+                  <h6>
+                    <strong>Delivery Time</strong> :
+                  </h6>
                   <p>Depends on the quantity</p>
                 </div>
               </div>

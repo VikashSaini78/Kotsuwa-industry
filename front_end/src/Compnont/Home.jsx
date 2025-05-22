@@ -43,38 +43,40 @@ function Home() {
   return (
     <>
       {/* slider image */}
-      <div className="slider_image-div">
-        <div
-          id="carouselExampleSlidesOnly"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img
-                className="img-fluid"
-                src="media/des4.webp"
-                alt="img error"
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                className="img-fluid"
-                src="media/des10.jpg"
-                alt="img error"
-              />
-            </div>
-            <div className="carousel-item">
-              {/* <img className="img-fluid" src="media/des11.jpeg" className="d-block w-100" alt="img error"/> */}
-              <img
-                className="img-fluid"
-                src="media/slider1.jpg"
-                alt="img error"
-              />
-            </div>
-          </div>
+     <div className="slider_wrapper">
+  <div className="slider_image-div">
+    <div
+      id="carouselExampleSlidesOnly"
+      className="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img
+            className="img-fluid"
+            src="media/des4.webp"
+            alt="img error"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className="img-fluid"
+            src="media/des10.jpg"
+            alt="img error"
+          />
+        </div>
+        <div className="carousel-item">
+          <img
+            className="img-fluid"
+            src="media/slider1.jpg"
+            alt="img error"
+          />
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
 
       {/* postfolio images */}
 

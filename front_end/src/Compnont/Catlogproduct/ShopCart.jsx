@@ -33,7 +33,7 @@ function ShopCart() {
         <hr />
         {cart.length > 0 ? (
           cart.map((item, index) => (
-            <div key={index} className="card_box">
+            <div key={index} className="card_box mt-4">
               <img src={item.file || item.image} alt={item.title} className="cart-image" />
               <div className="text_box">
                 <div className="title_price">
