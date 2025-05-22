@@ -233,7 +233,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="Testimonial_div">
-                  <h2>Testimonial</h2>
+                  <h2 className="lg:m-0 lg:p-0">Testimonial</h2>
 
                   <div className="text_slider">
                     <div
