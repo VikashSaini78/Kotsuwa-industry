@@ -25,9 +25,9 @@ function ShopCart() {
   };
 
   return (
-    <div className="card_container-shop">
+    <div className="card_container-shop"> 
       <div className="shopping_container-box">
-        <div className="shopping_container">
+        <div className="shopping_container text-center">
           <h4>Shopping Cart</h4>
         </div>
         <hr />

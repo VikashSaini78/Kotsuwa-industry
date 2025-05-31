@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Getdataproduct() {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,9 +26,25 @@ function Getdataproduct() {
     }
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log("📤 Sending Form Data:", formData); // Debugging Step
+
+  //   const formDataToSend = new FormData();
+  //   for (const key in formData) {
+  //     formDataToSend.append(key, formData[key]);
+  //   }
+
+  //   fetch("http://localhost:5003/api/productdata", {
+  //     method: "POST",
+  //     body: formDataToSend, // Sending as multipart/form-data
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => console.log("Response:", data))
+  //     .catch((error) => console.error("Error:", error));
+  // };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("📤 Sending Form Data:", formData); // Debugging Step
 
     const formDataToSend = new FormData();
     for (const key in formData) {
@@ -35,13 +53,33 @@ function Getdataproduct() {
 
     fetch("http://localhost:5003/api/productdata", {
       method: "POST",
-      body: formDataToSend, // Sending as multipart/form-data
+      body: formDataToSend,
     })
       .then((response) => response.json())
-      .then((data) => console.log("Response:", data))
-      .catch((error) => console.error("Error:", error));
+      .then((data) => {
+        toast.success("Product uploaded successfully!");
+        // Reset form
+        setFormData({
+          name: "",
+          pattern: "",
+          country: "",
+          style: "",
+          size: "",
+          material: "",
+          minOrderQty: "",
+          color: "",
+          brand: "",
+          oldprice: "",
+          newprice: "",
+          category: "",
+          file: null,
+        });
+      })
+      .catch((error) => {
+        toast.error("❌ Failed to upload product. Please try again.");
+        console.error("Error:", error);
+      });
   };
-
   return (
     <div className="input_container">
       <form onSubmit={handleSubmit} encType="multipart/form-data">
@@ -131,21 +169,22 @@ function Getdataproduct() {
             onChange={handleChange}
           />
         </div>
+    
         <div className="input_lable-getproduct">
           <label htmlFor="name">Old Price</label>
           <input
             type="number"
-            name="oldprice"
-            placeholder="old price"
+            name="newprice"
+            placeholder="new price"
             onChange={handleChange}
           />
         </div>
-        <div className="input_lable-getproduct">
+            <div className="input_lable-getproduct">
           <label htmlFor="name">New Price</label>
           <input
             type="number"
-            name="newprice"
-            placeholder="new price"
+            name="oldprice"
+            placeholder="old price"
             onChange={handleChange}
           />
         </div>
@@ -176,6 +215,7 @@ function Getdataproduct() {
 
         <div className="getdata-submit_btn"> <button type="submit">Submit</button></div>
       </form>
+       <ToastContainer position="top-center" autoClose={3000} />
     </div>
   );
 }

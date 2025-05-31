@@ -17,29 +17,28 @@ import Address from "./Compnont/Catlogproduct/Address";
 import Insertdata from "./Compnont/Curd/Insertdata";
 
 function App() {
-  return ( 
+  return (
     <>
-      
       <BrowserRouter>
-      <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/customise" element={<Customise/>} />
-        <Route path="/contact" element={<Navbar1/>} />
-        <Route path="/catlog" element={<Catlog/>} />
-        <Route path="/cat" element={<Cut/>} />
-        <Route path="/getdataproduct" element={<Getdataproduct/>} />
-        <Route path="/product/:id" element={<Quaryproduct />} />
-        <Route path="/shopcard" element={<ShopCart />} />
-        <Route path="/byproduct" element={<ByProduct/>} />
-        <Route path="/address" element={<Address/>} />
-        <Route path="/insertproductdata" element={<Insertdata/>} />
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/customise" element={<Customise />} />
+          <Route path="/contact" element={<Navbar1 />} />
+          <Route path="/catlog" element={<Catlog />} />
+          <Route path="/cat" element={<Cut />} />
+          <Route path="/product/:id" element={<Quaryproduct />} />
+          <Route path="/shopcard" element={<ShopCart />} />
+          <Route path="/byproduct" element={<ByProduct />} />
+          <Route path="/address" element={<Address />} />
+          <Route path="/getdataproduct" element={<Getdataproduct />} />
+          <Route path="/insertproductdata" element={<Insertdata />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-   );
+  );
 }
 
 export default App;

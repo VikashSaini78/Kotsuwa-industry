@@ -469,7 +469,7 @@ font-size: 12px;
 
 .Testimonial_div h2 {
   width: 100%;
-  height: 15vh;
+  margin: 20px;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -894,7 +894,7 @@ div#root {
 /* Query Image Box */
 .quary_image-box {
   width: 36%;
-  height: 80vh;
+  /* height: 80vh; */
   /* background-color: #b1a3a3; */
   border: 1px solid gray;
   overflow: hidden;
@@ -1522,7 +1522,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #ebebeb91;
   padding: 10px;
   border-radius: 5px;
-  margin-top: 75px;
+  margin-top: 10px;
 
 }
 
@@ -1531,7 +1531,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .Remove_data-button {
-  padding: 20px;
+  /* padding: 20px; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1655,8 +1655,6 @@ text-align: center;
 @media (max-width: 768px) {
   .navbar_container {
     height: 70px;
-    
-    
   }
   .nav_menu-container{
     display: flex;
@@ -1686,17 +1684,6 @@ text-align: center;
     z-index: 1;
 
   }
-  /* .Add_to_card-button i {
-  font-size: 20px;
-  color: rgb(13, 102, 102);
-  display: block;
-
-} */
- .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .left {
   order: 2;
 }
@@ -2129,17 +2116,27 @@ margin: auto;
   .quary_text-colom {
     width: 95%;
     margin: auto;
+   
   }
 
-  .card_box {
-    display: grid;
-  }
+
 
   .card_box {
     width: 90%;
     margin: auto;
+     display: grid;
     /* background: #000; */
+    text-align: center;
   }
+   .card_box img{
+    text-align: center;
+    margin: auto;
+   }
+   .shopping_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 
   .bycard_container {
     display: grid;

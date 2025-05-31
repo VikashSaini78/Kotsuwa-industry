@@ -53,7 +53,7 @@ useEffect(() => {
   return () => window.removeEventListener("scroll", handleScroll);
 }, []);
   return (
-    <>
+    <> 
       {/* <button>Add to card</button> */}
       <div className={`navbar_container ${isSticky ? "sticky_navbar" : ""}`}>
 

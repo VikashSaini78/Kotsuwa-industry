@@ -187,11 +187,6 @@ function Address() {
               placeholder="Nearby Famous Place / Shop / School, etc. (optional)"
               required
             />
-            <button type="submit" className="address_orderbtn">
-              Order Now
-            </button>
-          </form>
-        </div>
 
         <div className="col-md-6">
           <div className="address_idproduct-box">
@@ -201,14 +196,23 @@ function Address() {
               <p>No Product Selected</p>
             )}
           </div>
-          <div className="Remove_data-button text-center mt-3">
+          {/* <div className="Remove_data-button text-center">
            <Link to={"/catlog"}>
            <button className="btn btn-danger" onClick={removeData}>
               Remove Data
             </button>
            </Link>
-          </div>
+          </div> */}
         </div>
+
+
+
+            <button type="submit" className="address_orderbtn">
+              Order Now
+            </button>
+          </form>
+        </div>
+
       </div>
     </div>
   );
